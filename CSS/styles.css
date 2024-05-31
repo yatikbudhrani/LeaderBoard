@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/originals/7a/fb/04/7afb0491c91b2f9e9aac56667c3be677.jpg");
+}
+
+#required {
+  font-size: 18px;
+  color: red;
+  margin-top: 20px;
+  display: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+section > h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.inp-box {
+  padding: 0.5em 0.8em;
+  width: 10em;
+  font-size: 16px;
+  height: 38px;
+  width: 160px;
+  border: none;
+  background-color: white;
+}
+
+.inp-box:focus {
+  border: 1px solid white;
+  outline: none;
+}
+
+#btn {
+  height: 38px;
+  width: 10em;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  margin-top: 2rem;
+  gap: 8px;
+}
+
+#container {
+  width: 832px;
+  margin-top: 1rem;
+}
+
+.box {
+  padding: 20px 15px;
+  background: white;
+  border-bottom: 1px solid black;
+}
+
+.ul {
+  display: flex;
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.name {
+  font-size: 17px;
+}
+
+.year {
+  font-size: 12px;
+  color: gray;
+}
+
+.minus {
+  cursor: pointer;
+}
+
+.plus {
+  cursor: pointer;
+}
+
+.del {
+  cursor: pointer;
+}
+
+.minus:hover {
+  font-weight: 700;
+  color: gold;
+}
+
+.plus:hover {
+  font-weight: 700;
+  color: gold;
+}
+
+.material-symbols-outlined:hover {
+  color: gold;
+}
+
+.img1 {
+  width: 40px;
+}
+
+.first1 {
+  list-style: none;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0) scaleY(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0) scaleY(0.9);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0) scaleY(0.985);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fancyy {
+  font-size: 4vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  color: white;
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+}
+
+.fancy {
+  animation-name: bounceInLeft;
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: url("https://media.istockphoto.com/id/1049681110/photo/christmas-snowflakes-on-red-background.jpg?s=1024x1024&w=is&k=20&c=ZUH6Qb-e8evt-2ULFIEhiyyovbKFrY5MUvC2pyMBkFY=");
+    background-size: 110% auto;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 70%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+  .inp-box {
+    width: 100%;
+  }
+  .fancyy {
+    font-size: 25px;
+  }
+  .box1 {
+    margin-bottom: 8px;
+  }
+  #btn {
+    width: 100%;
+  }
+  #container {
+    width: 14.537rem;
+  }
+  .ul {
+    flex-direction: column;
+    width: 80%;
+  }
+  .name {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    justify-content: center;
+  }
+}
